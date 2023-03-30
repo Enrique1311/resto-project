@@ -15,6 +15,10 @@
 			rel="stylesheet"
 			href="css/styles.css"
 		/>
+		<script
+			src="https://kit.fontawesome.com/e3fdf6ef30.js"
+			crossorigin="anonymous"
+		></script>
 	</head>
 	<body>
 		<nav>
@@ -55,7 +59,39 @@
 					>
 				</div>
 				<div class="hamburguer-menu">
-					<img src="" />
+					<i class="fa-solid fa-bars"></i>
+				</div>
+				<div class="mobile-navbar-links">
+					<i class="close-menu-icon fa-solid fa-circle-xmark"></i>
+					<a
+						href="#home"
+						class="mobile-link-item"
+						><i
+							class="fa fa-home"
+							aria-hidden="true"
+						></i
+						>Home</a
+					>
+					<a
+						href="#about-us"
+						class="mobile-link-item"
+						><i class="fa-solid fa-beer-mug-empty"></i>About us</a
+					>
+					<a
+						href="#our-food"
+						class="mobile-link-item"
+						><i class="fa-solid fa-burger"></i>Our food</a
+					>
+					<a
+						href="#menu"
+						class="mobile-link-item"
+						><i class="fa-solid fa-book-open-reader"></i>Menu</a
+					>
+					<a
+						href="#contacts"
+						class="mobile-link-item"
+						><i class="fa-solid fa-comment"></i>Contacts</a
+					>
 				</div>
 			</div>
 		</nav>
@@ -72,28 +108,19 @@
 				/>
 				<div class="social-media">
 					<a href="">
-						<img
-							src="images/instagram.svg"
-							alt=""
-						/>
+						<i class="fa-brands fa-facebook-f"></i>
 					</a>
 					<a href="">
-						<img
-							src="images/facebook-f.svg"
-							alt=""
-						/>
+						<i class="fa-brands fa-instagram"></i>
 					</a>
 					<a href="">
-						<img
-							src="images/whatsapp.svg"
-							alt=""
-						/>
+						<i class="fa-brands fa-whatsapp"></i>
 					</a>
 				</div>
 				<p>Gorriti 4564 - Palermo - CABA</p>
 			</section>
 			<section id="about-us">
-				<div class="about-us-container container">
+				<div class="about-us-container">
 					<div class="about-us-text">
 						<h2>About us</h2>
 						<p>
@@ -138,107 +165,71 @@
 			</section>
 			<section
 				id="menu"
-				class="nenu-container container"
+				class="nenu-container"
 			>
-				Menu
+				<h2>Menu</h2>
 			</section>
-			<section
+			<!-- <section
 				id="delivery"
-				class="delivery-container container"
+				class="delivery-container"
 			>
 				Delivery
-			</section>
+			</section> -->
 		</main>
 		<footer
 			id="contacts"
-			class="contacts-container container"
+			class="contacts-container"
 		>
-			<h2 class="contacts-title sections-title">Contact us</h2>
-			<div class="contacts-content">
-				<form
-					action=""
-					class="my-form"
-				>
-					<h4>Send an Email</h4>
-					<div>
-						<label
-							for=""
-							class="form-label"
-							>Name</label
-						>
-						<input
-							type="text"
-							class="form-input"
-						/>
-					</div>
-					<div>
-						<label
-							for=""
-							class="form-label"
-							>Email</label
-						>
-						<input
-							type="email"
-							class="form-input"
-						/>
-					</div>
-					<div>
-						<label
-							for=""
-							class="form-label"
-							>Message</label
-						>
-						<textarea
-							id="msg"
-							name="message"
-							rows="4"
-						></textarea>
-					</div>
-					<div class="submit-button">
-						<button
-							class="my-btn"
-							type="submit"
-						>
-							Submit
-						</button>
-					</div>
-				</form>
-				<div class="footer-part">
-					<p class="footer-text sections-paragraph">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
-						magni aperiam exercitationem provident suscipit atque repellat sed
-						voluptate! Repudiandae repellendus ex sit odit laborum impedit
-						temporibus. Provident qui tempora illum!
-					</p>
-					<div>
-						<div class="social-media">
-							<a href="#">
-								<img
-									src="images/instagram.png"
-									alt=""
-								/>
-							</a>
-							<a href="">
-								<img
-									src="images/facebook.png"
-									alt=""
-								/>
-							</a>
-							<a href="">
-								<img
-									src="images/whatsapp.png"
-									alt=""
-								/>
-							</a>
-						</div>
-						<img
-							class="logo"
-							src="images/solution.png"
-						/>
-						<h2>Resto Proyect</h2>
-					</div>
-				</div>
+			<h2 class="contacts-title">Contact us</h2>
+			<div class="footer-logo-and-text">
+				<img
+					class="logo"
+					src="./images/beer-logo.png"
+				/>
+				<p class="footer-text sections-paragraph">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora magni
+					aperiam exercitationem provident suscipit atque repellat sed
+					voluptate! Repudiandae repellendus ex sit odit laborum impedit
+					temporibus. Provident qui tempora illum! Lorem ipsum dolor sit amet
+					consectetur, adipisicing elit. Voluptas fuga aperiam vitae minima
+					porro assumenda commodi corrupti aliquam, earum doloribus eaque ipsa,
+					totam illum eos et cumque voluptates sit suscipit? Lorem ipsum dolor
+					sit amet consectetur adipisicing elit. Voluptate omnis maxime ratione,
+					quidem vitae animi fugiat saepe tenetur adipisci.
+				</p>
 			</div>
+			<form class="contacts-form">
+				<h4>Suscribe to resive ours news and promos</h4>
+				<div class="form-content">
+					<label
+						for=""
+						class="form-label"
+					></label>
+					<input
+						type="email"
+						placeholder="Your email"
+					/>
+					<button
+						class="my-button"
+						type="submit"
+					>
+						Suscribe
+					</button>
+				</div>
+			</form>
+			<div class="social-media">
+				<a href="">
+					<i class="fa-brands fa-facebook-f"></i>
+				</a>
+				<a href="">
+					<i class="fa-brands fa-instagram"></i>
+				</a>
+				<a href="">
+					<i class="fa-brands fa-whatsapp"></i>
+				</a>
+			</div>
+			<p>Gorriti 4564 - Palermo - CABA - (11) 5555-5555</p>
+			<p></p>
 		</footer>
 		<script src="./js/main.js"></script>
 	</body>
