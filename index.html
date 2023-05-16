@@ -62,7 +62,10 @@
 					<i class="fa-solid fa-bars"></i>
 				</div>
 				<div class="mobile-navbar-links">
-					<i class="close-menu-icon fa-solid fa-circle-xmark"></i>
+					<div class="close-menu-icon">
+						<i class="fa-solid fa-circle-xmark"></i>
+					</div>
+
 					<a
 						href="#home"
 						class="mobile-link-item"
@@ -152,7 +155,7 @@
 						class="burguer-image"
 					/>
 					<div class="our-food-text">
-						<h2>Our food</h2>
+						<h2 class="our-food-title">Our food</h2>
 						<p>
 							Lorem, ipsum dolor sit amet consectetur adipisicing elit.
 							Consequatur eaque reiciendis veritatis animi maxime, aliquam nam
@@ -165,16 +168,18 @@
 			</section>
 			<section
 				id="menu"
-				class="nenu-container"
+				class="menu-container"
 			>
-				<h2>Menu</h2>
+				<h2 class="menu-section-title">Menu</h2>
+				<article></article>
 			</section>
-			<!-- <section
-				id="delivery"
-				class="delivery-container"
-			>
-				Delivery
-			</section> -->
+			<template id="menu-template">
+				<div class="name-desc">
+					<h4 class="name"></h4>
+					<p class="description"></p>
+				</div>
+				<p class="price"></p>
+			</template>
 		</main>
 		<footer
 			id="contacts"

@@ -20,6 +20,23 @@ body {
 	font-family: "roboto", sans-serif;
 }
 
+/* Buttons ******************************************************/
+.my-button {
+	background-color: var(--black);
+	border: none;
+	color: var(--white);
+	width: fit-content;
+	padding: 0.4rem 2rem;
+	font-size: 1.2rem;
+	border-radius: 0.5rem;
+	border: solid 0.1rem var(--white);
+}
+.my-button:hover {
+	background-color: var(--white);
+	border: solid 0.1rem var(--black);
+	color: var(--black);
+}
+
 /* Social Media ***************************************************/
 .social-media {
 	display: flex;
@@ -33,15 +50,15 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 2rem;
-	height: 2rem;
+	width: 2.6rem;
+	height: 2.6rem;
 	border-radius: 50%;
 	background-color: var(--transparent-white);
 	transition: all ease-in-out 0.4s;
 	text-decoration: none;
 }
 .social-media i {
-	font-size: 1.4rem;
+	font-size: 1.6rem;
 	color: var(--dark-grey);
 }
 .social-media a:hover {
@@ -109,7 +126,7 @@ body {
 .mobile-navbar-links {
 	position: absolute;
 	background-color: var(--black);
-	width: 70%;
+	width: 60%;
 	height: 100vh;
 	top: 0;
 	right: -100%;
@@ -117,7 +134,7 @@ body {
 	display: none;
 	flex-direction: column;
 	justify-content: space-around;
-	padding: 3rem;
+	padding: 6rem 2rem;
 	color: var(--white);
 	transition: 0.5s;
 }
@@ -130,7 +147,7 @@ body {
 	top: 1rem;
 	right: 2rem;
 	font-size: 2rem;
-	z-index: 50;
+	z-index: 200;
 	cursor: pointer;
 }
 .mobile-link-item {
@@ -209,16 +226,7 @@ body {
 .about-us-text p {
 	margin: 2rem 1rem;
 }
-.my-button {
-	background-color: var(--black);
-	border: none;
-	color: var(--white);
-	width: fit-content;
-	padding: 0.4rem 2rem;
-	font-size: 1.2rem;
-	border-radius: 0.5rem;
-	border: solid 0.1rem var(--white);
-}
+
 /* Our food ************************************************/
 .our-food-container {
 	display: flex;
@@ -236,16 +244,17 @@ body {
 	text-align: left;
 	font-size: 1.2rem;
 	margin: auto;
-	padding-right: 5rem;
-	padding-left: 1rem;
+	padding-right: 4rem;
+	padding-left: 4rem;
 	box-shadow: 0 0 3rem 0 var(--black);
 }
 .our-food-text h2 {
 	margin-bottom: 2rem;
+	text-align: center;
 }
 
 /* Menu *******************************************************/
-.nenu-container {
+.menu-container {
 	background-color: var(--light-grey);
 	height: 100vh;
 	display: flex;
@@ -263,11 +272,12 @@ body {
 	background-color: black;
 	color: var(--light-grey);
 	width: 100%;
-	padding: 5rem 6rem 2rem 6rem;
+	padding: 5rem 6rem;
 	box-shadow: 0 0 1rem 0 var(--black);
 }
 .contacts-title {
 	text-align: center;
+	margin-bottom: 1rem;
 }
 .footer-logo-and-text {
 	display: flex;
@@ -353,7 +363,8 @@ body {
 	}
 	/* Contacts *********************/
 	.contacts-container {
-		padding: 4rem 3rem 1rem 3rem;
+		padding: 3rem;
+		padding-top: 4.5rem;
 	}
 }
 @media screen and (max-width: 650px) {
@@ -383,9 +394,6 @@ body {
 		padding: 1.5rem;
 	}
 	/* Contacts *********************/
-	.contacts-container {
-		padding: 5rem 3rem 1rem 3rem;
-	}
 	.footer-logo-and-text {
 		flex-direction: column;
 		gap: 2rem;

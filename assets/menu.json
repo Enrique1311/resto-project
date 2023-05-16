@@ -1,0 +1,411 @@
+{
+	"beers": [
+		{
+			"id": 1,
+			"name": "Hopzilla",
+			"description": "An intensely hoppy IPA with citrus and tropical notes. Balanced bitterness and medium body.",
+			"price": 6.5
+		},
+		{
+			"id": 2,
+			"name": "Hazy Heaven",
+			"description": "A hazy IPA with fresh hop aroma and fruity flavors. Smooth mouthfeel and juicy finish.",
+			"price": 7.0
+		},
+		{
+			"id": 3,
+			"name": "Amber Ale",
+			"description": "An amber-colored beer with toasty and caramel notes. Perfect balance between malt and hops.",
+			"price": 5.5
+		},
+		{
+			"id": 4,
+			"name": "Belgian Tripel",
+			"description": "A golden Belgian ale with spicy and fruity aromas. Medium body and dry finish with a hint of sweetness.",
+			"price": 6.0
+		},
+		{
+			"id": 5,
+			"name": "Munich Helles",
+			"description": "A clear and refreshing German lager. Smooth, balanced, and subtly floral bitterness.",
+			"price": 5.0
+		},
+		{
+			"id": 6,
+			"name": "Vienna Lager",
+			"description": "An amber lager with a smooth malt flavor and hints of caramel. Medium body and clean finish.",
+			"price": 5.5
+		},
+		{
+			"id": 7,
+			"name": "Chocolate Stout",
+			"description": "A dark and silky stout with intense chocolate and coffee flavors. Full-bodied with a slightly bitter finish.",
+			"price": 6.5
+		},
+		{
+			"id": 8,
+			"name": "Irish Dry Stout",
+			"description": "A dry stout with roasted flavors and a touch of coffee. Light body and a smooth, balanced finish.",
+			"price": 6.0
+		},
+		{
+			"id": 9,
+			"name": "Wheat Beer",
+			"description": "A light and refreshing wheat beer with notes of banana and spices. Light body and high carbonation.",
+			"price": 5.5
+		},
+		{
+			"id": 10,
+			"name": "Pilsner",
+			"description": "A light golden pilsner with mild bitterness and malty flavor. Refreshing and easy to drink.",
+			"price": 5.0
+		}
+	],
+	"hamburgers": [
+		{
+			"name": "Classic Burger",
+			"detail": "Delicious burger with beef patty, lettuce, tomato, onion, and special sauce. Served on a brioche bun.",
+			"price": 8.5
+		},
+		{
+			"name": "Cheeseburger",
+			"detail": "A classic burger with a generous portion of melted cheddar cheese. Accompanied by lettuce, tomato, and onion.",
+			"price": 9.0
+		},
+		{
+			"name": "Bacon Burger",
+			"detail": "A juicy burger with crispy bacon, cheese, lettuce, tomato, and caramelized onions. A flavor explosion!",
+			"price": 10.5
+		},
+		{
+			"name": "Mushroom Swiss Burger",
+			"detail": "Burger topped with sautéed mushrooms and melted Swiss cheese. Accompanied by fresh lettuce and tomato.",
+			"price": 9.5
+		},
+		{
+			"name": "Spicy Jalapeño Burger",
+			"detail": "Burger with a spicy kick, pickled jalapeños, pepper jack cheese, lettuce, and tomato. Perfect for spice lovers!",
+			"price": 9.5
+		},
+		{
+			"name": "BBQ Burger",
+			"detail": "Burger with barbecue sauce, crispy onion rings, cheddar cheese, and fresh lettuce. An irresistible combination!",
+			"price": 10.0
+		},
+		{
+			"name": "Guacamole Burger",
+			"detail": "Burger with homemade guacamole, Monterey Jack cheese, slices of fresh tomato, and crispy lettuce. A delicious and refreshing option.",
+			"price": 9.5
+		},
+		{
+			"name": "Blue Cheese Burger",
+			"detail": "Burger topped with crumbled blue cheese, caramelized onions, and fresh spinach. A bold flavor for cheese lovers.",
+			"price": 10.5
+		},
+		{
+			"name": "Hawaiian Burger",
+			"detail": "Burger with an irresistible combination of ham, grilled pineapple, Swiss cheese, lettuce, and teriyaki sauce. A tropical explosion!",
+			"price": 10.0
+		},
+		{
+			"name": "Veggie Burger",
+			"detail": "Vegetarian burger made with a blend of vegetables, beans, and spices. Served with lettuce, tomato, and vegan mayo.",
+			"price": 9.0
+		}
+	],
+	"platters": [
+		{
+			"name": "Classic Platter",
+			"description": "A combination of cured meats such as salami, ham, cheese, olives, and homemade bread.",
+			"price": 15.0
+		},
+		{
+			"name": "Mediterranean Platter",
+			"description": "A selection of assorted cheeses, olives, sun-dried tomatoes, country bread, and dips.",
+			"price": 18.5
+		},
+		{
+			"name": "Seafood Platter",
+			"description": "A mix of shrimp, mussels, calamari, octopus, and seafood sauces. Served with fresh bread.",
+			"price": 22.0
+		},
+		{
+			"name": "Artisanal Cheese Platter",
+			"description": "A tasting of artisanal cheeses such as brie, gouda, roquefort, and goat cheese. Accompanied by dried fruits and homemade bread.",
+			"price": 20.5
+		},
+		{
+			"name": "Vegetarian Platter",
+			"description": "A variety of fresh vegetables, hummus, yogurt dips, and whole-grain bread. Perfect for vegan food lovers.",
+			"price": 16.5
+		}
+	],
+	"pizzas": [
+		{
+			"id": 1,
+			"name": "Margherita Pizza",
+			"description": "Traditional pizza topped with fresh mozzarella, tomato sauce, and basil leaves.",
+			"price": 12.5
+		},
+		{
+			"id": 2,
+			"name": "Pepperoni Pizza",
+			"description": "Classic pizza with a generous amount of pepperoni and melted cheese.",
+			"price": 14.0
+		},
+		{
+			"id": 3,
+			"name": "Vegetarian Pizza",
+			"description": "Pizza topped with a variety of fresh vegetables, including bell peppers, onions, mushrooms, and olives.",
+			"price": 13.5
+		},
+		{
+			"id": 4,
+			"name": "BBQ Chicken Pizza",
+			"description": "Pizza with grilled chicken, barbecue sauce, red onions, and cilantro for a tangy and savory flavor.",
+			"price": 15.0
+		},
+		{
+			"id": 5,
+			"name": "Hawaiian Pizza",
+			"description": "Pizza topped with ham, pineapple, and melted cheese, offering a sweet and savory combination.",
+			"price": 13.5
+		},
+		{
+			"id": 6,
+			"name": "Meat Lover's Pizza",
+			"description": "Pizza loaded with various types of meat such as sausage, bacon, pepperoni, and ham.",
+			"price": 16.5
+		},
+		{
+			"id": 7,
+			"name": "Mediterranean Pizza",
+			"description": "Pizza topped with ingredients like feta cheese, olives, sun-dried tomatoes, and fresh herbs.",
+			"price": 14.5
+		},
+		{
+			"id": 8,
+			"name": "Four Cheese Pizza",
+			"description": "Pizza with a delightful combination of mozzarella, cheddar, provolone, and gorgonzola cheeses.",
+			"price": 15.0
+		},
+		{
+			"id": 9,
+			"name": "Buffalo Chicken Pizza",
+			"description": "Pizza featuring buffalo sauce-coated chicken, blue cheese dressing, and a drizzle of ranch.",
+			"price": 15.5
+		},
+		{
+			"id": 10,
+			"name": "Vegan Pizza",
+			"description": "Pizza made with vegan cheese, a variety of vegetables, and a flavorful tomato sauce.",
+			"price": 14.5
+		}
+	],
+	"gourmet": [
+		{
+			"id": 1,
+			"name": "Grilled Chicken",
+			"description": "Juicy grilled chicken breast served with roasted vegetables.",
+			"price": 12.99
+		},
+		{
+			"id": 2,
+			"name": "Pasta Primavera",
+			"description": "Delicious pasta tossed with fresh vegetables and Parmesan cheese.",
+			"price": 10.99
+		},
+		{
+			"id": 3,
+			"name": "Beef Tacos",
+			"description": "Soft corn tortillas filled with seasoned beef, topped with salsa and guacamole.",
+			"price": 8.99
+		},
+		{
+			"id": 4,
+			"name": "Salmon Salad",
+			"description": "Grilled salmon fillet served over mixed greens with a tangy vinaigrette.",
+			"price": 14.99
+		},
+		{
+			"id": 5,
+			"name": "Mushroom Risotto",
+			"description": "Creamy risotto cooked with mushrooms and finished with Parmesan cheese.",
+			"price": 11.99
+		},
+		{
+			"id": 6,
+			"name": "Vegetable Curry",
+			"description": "Aromatic vegetable curry served with basmati rice and naan bread.",
+			"price": 9.99
+		},
+		{
+			"id": 7,
+			"name": "Steak Fajitas",
+			"description": "Sizzling strips of steak with bell peppers and onions, served with tortillas.",
+			"price": 15.99
+		},
+		{
+			"id": 8,
+			"name": "Chicken Caesar Wrap",
+			"description": "Grilled chicken, romaine lettuce, and Caesar dressing wrapped in a tortilla.",
+			"price": 7.99
+		},
+		{
+			"id": 9,
+			"name": "Spinach and Feta Stuffed Chicken",
+			"description": "Chicken breast stuffed with spinach and feta cheese, served with a side of vegetables.",
+			"price": 13.99
+		}
+	],
+	"desserts": [
+		{
+			"id": 1,
+			"name": "Chocolate Brownie",
+			"description": "A rich and decadent chocolate brownie served with a scoop of vanilla ice cream.",
+			"price": 8.99
+		},
+		{
+			"id": 2,
+			"name": "New York Cheesecake",
+			"description": "Creamy and smooth cheesecake with a graham cracker crust.",
+			"price": 7.99
+		},
+		{
+			"id": 3,
+			"name": "Apple Pie",
+			"description": "Classic apple pie made with fresh apples and a flaky crust.",
+			"price": 6.99
+		},
+		{
+			"id": 4,
+			"name": "Strawberry Shortcake",
+			"description": "Layers of fluffy sponge cake, fresh strawberries, and whipped cream.",
+			"price": 9.99
+		},
+		{
+			"id": 5,
+			"name": "Tiramisu",
+			"description": "Italian dessert made with layers of espresso-soaked ladyfingers and mascarpone cream.",
+			"price": 8.99
+		},
+		{
+			"id": 6,
+			"name": "Lemon Tart",
+			"description": "Tangy and refreshing lemon tart with a buttery crust.",
+			"price": 7.99
+		}
+	],
+	"drinks": [
+		{
+			"id": 1,
+			"name": "Mojito",
+			"description": "A refreshing cocktail made with rum, lime juice, mint leaves, sugar, and soda water.",
+			"price": 8.99
+		},
+		{
+			"id": 2,
+			"name": "Cosmopolitan",
+			"description": "A classic cocktail made with vodka, cranberry juice, lime juice, and triple sec.",
+			"price": 9.99
+		},
+		{
+			"id": 3,
+			"name": "Old Fashioned",
+			"description": "A timeless cocktail made with whiskey, sugar, water, and bitters.",
+			"price": 10.99
+		},
+		{
+			"id": 4,
+			"name": "Negroni",
+			"description": "A bitter and sweet cocktail made with gin, Campari, and sweet vermouth.",
+			"price": 9.99
+		},
+		{
+			"id": 5,
+			"name": "Margarita",
+			"description": "A classic tequila-based cocktail made with lime juice and triple sec.",
+			"price": 8.99
+		},
+		{
+			"id": 6,
+			"name": "Whiskey Sour",
+			"description": "A classic cocktail made with whiskey, lemon juice, and sugar.",
+			"price": 9.99
+		},
+		{
+			"id": 7,
+			"name": "Martini",
+			"description": "A sophisticated cocktail made with gin (or vodka) and dry vermouth.",
+			"price": 10.99
+		},
+		{
+			"id": 8,
+			"name": "Daiquiri",
+			"description": "A fruity cocktail made with rum, lime juice, and simple syrup.",
+			"price": 8.99
+		}
+	],
+	"beverages": [
+		{
+			"id": 1,
+			"name": "Sparkling Lemonade",
+			"description": "Refreshing lemonade with a sparkling twist.",
+			"price": 3.99
+		},
+		{
+			"id": 2,
+			"name": "Virgin Mojito",
+			"description": "A classic minty and citrusy mocktail.",
+			"price": 4.5
+		},
+		{
+			"id": 3,
+			"name": "Cucumber Cooler",
+			"description": "Cool off with this refreshing blend of cucumber and lime.",
+			"price": 3.75
+		},
+		{
+			"id": 4,
+			"name": "Berry Blast Smoothie",
+			"description": "A delicious blend of mixed berries and yogurt.",
+			"price": 5.25
+		},
+		{
+			"id": 5,
+			"name": "Iced Matcha Latte",
+			"description": "A creamy and energizing green tea latte over ice.",
+			"price": 4.99
+		},
+		{
+			"id": 6,
+			"name": "Pineapple Paradise",
+			"description": "A tropical blend of pineapple, coconut, and orange juice.",
+			"price": 4.75
+		},
+		{
+			"id": 7,
+			"name": "Watermelon Refresher",
+			"description": "Quench your thirst with this revitalizing watermelon drink.",
+			"price": 3.99
+		},
+		{
+			"id": 8,
+			"name": "Ginger Fizz",
+			"description": "A bubbly and invigorating ginger ale-based mocktail.",
+			"price": 4.25
+		},
+		{
+			"id": 9,
+			"name": "Mango Lassi",
+			"description": "A traditional Indian yogurt-based smoothie with mango.",
+			"price": 4.5
+		},
+		{
+			"id": 10,
+			"name": "Cranberry Spritzer",
+			"description": "A tangy and sparkling cranberry-infused mocktail.",
+			"price": 3.75
+		}
+	]
+}
