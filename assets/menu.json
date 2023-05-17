@@ -63,78 +63,93 @@
 	],
 	"hamburgers": [
 		{
+			"id": 1,
 			"name": "Classic Burger",
-			"detail": "Delicious burger with beef patty, lettuce, tomato, onion, and special sauce. Served on a brioche bun.",
+			"description": "Delicious burger with beef patty, lettuce, tomato, onion, and special sauce. Served on a brioche bun.",
 			"price": 8.5
 		},
 		{
+			"id": 2,
 			"name": "Cheeseburger",
-			"detail": "A classic burger with a generous portion of melted cheddar cheese. Accompanied by lettuce, tomato, and onion.",
+			"description": "A classic burger with a generous portion of melted cheddar cheese. Accompanied by lettuce, tomato, and onion.",
 			"price": 9.0
 		},
 		{
+			"id": 3,
 			"name": "Bacon Burger",
-			"detail": "A juicy burger with crispy bacon, cheese, lettuce, tomato, and caramelized onions. A flavor explosion!",
+			"description": "A juicy burger with crispy bacon, cheese, lettuce, tomato, and caramelized onions. A flavor explosion!",
 			"price": 10.5
 		},
 		{
+			"id": 4,
 			"name": "Mushroom Swiss Burger",
-			"detail": "Burger topped with sautéed mushrooms and melted Swiss cheese. Accompanied by fresh lettuce and tomato.",
+			"description": "Burger topped with sautéed mushrooms and melted Swiss cheese. Accompanied by fresh lettuce and tomato.",
 			"price": 9.5
 		},
 		{
+			"id": 5,
 			"name": "Spicy Jalapeño Burger",
-			"detail": "Burger with a spicy kick, pickled jalapeños, pepper jack cheese, lettuce, and tomato. Perfect for spice lovers!",
+			"description": "Burger with a spicy kick, pickled jalapeños, pepper jack cheese, lettuce, and tomato. Perfect for spice lovers!",
 			"price": 9.5
 		},
 		{
+			"id": 6,
 			"name": "BBQ Burger",
-			"detail": "Burger with barbecue sauce, crispy onion rings, cheddar cheese, and fresh lettuce. An irresistible combination!",
+			"description": "Burger with barbecue sauce, crispy onion rings, cheddar cheese, and fresh lettuce. An irresistible combination!",
 			"price": 10.0
 		},
 		{
+			"id": 7,
 			"name": "Guacamole Burger",
-			"detail": "Burger with homemade guacamole, Monterey Jack cheese, slices of fresh tomato, and crispy lettuce. A delicious and refreshing option.",
+			"description": "Burger with homemade guacamole, Monterey Jack cheese, slices of fresh tomato, and crispy lettuce. A delicious and refreshing option.",
 			"price": 9.5
 		},
 		{
+			"id": 8,
 			"name": "Blue Cheese Burger",
-			"detail": "Burger topped with crumbled blue cheese, caramelized onions, and fresh spinach. A bold flavor for cheese lovers.",
+			"description": "Burger topped with crumbled blue cheese, caramelized onions, and fresh spinach. A bold flavor for cheese lovers.",
 			"price": 10.5
 		},
 		{
+			"id": 9,
 			"name": "Hawaiian Burger",
-			"detail": "Burger with an irresistible combination of ham, grilled pineapple, Swiss cheese, lettuce, and teriyaki sauce. A tropical explosion!",
+			"description": "Burger with an irresistible combination of ham, grilled pineapple, Swiss cheese, lettuce, and teriyaki sauce. A tropical explosion!",
 			"price": 10.0
 		},
 		{
+			"id": 10,
 			"name": "Veggie Burger",
-			"detail": "Vegetarian burger made with a blend of vegetables, beans, and spices. Served with lettuce, tomato, and vegan mayo.",
+			"description": "Vegetarian burger made with a blend of vegetables, beans, and spices. Served with lettuce, tomato, and vegan mayo.",
 			"price": 9.0
 		}
 	],
 	"platters": [
 		{
+			"id": 1,
 			"name": "Classic Platter",
 			"description": "A combination of cured meats such as salami, ham, cheese, olives, and homemade bread.",
 			"price": 15.0
 		},
 		{
+			"id": 2,
 			"name": "Mediterranean Platter",
 			"description": "A selection of assorted cheeses, olives, sun-dried tomatoes, country bread, and dips.",
 			"price": 18.5
 		},
 		{
+			"id": 3,
 			"name": "Seafood Platter",
 			"description": "A mix of shrimp, mussels, calamari, octopus, and seafood sauces. Served with fresh bread.",
 			"price": 22.0
 		},
 		{
+			"id": 4,
 			"name": "Artisanal Cheese Platter",
 			"description": "A tasting of artisanal cheeses such as brie, gouda, roquefort, and goat cheese. Accompanied by dried fruits and homemade bread.",
 			"price": 20.5
 		},
 		{
+			"id": 5,
 			"name": "Vegetarian Platter",
 			"description": "A variety of fresh vegetables, hummus, yogurt dips, and whole-grain bread. Perfect for vegan food lovers.",
 			"price": 16.5

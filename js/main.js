@@ -12,10 +12,9 @@ function toggleMenu() {
 }
 
 // Food menu *************************************************
-const $template = document.getElementById("menu-template").content;
-const $title = document.querySelector(".menu-section-title");
-const $menu = document.querySelector(".menu");
-const $fragment = document.createDocumentFragment();
+const $beersItems = document.querySelector(".beers-items");
+const $burgersItems = document.querySelector(".burgers-items");
+const $plattersItems = document.querySelector(".platters-items");
 
 const getMenu = async () => {
 	try {
@@ -24,21 +23,38 @@ const getMenu = async () => {
 
 		if (!res.ok) throw { statusText: res.statusText };
 
-		console.log(data);
-		console.log(data.beers);
-
 		data.beers.forEach((el) => {
-			el.forEach((el) => {
-				$template.querySelector(".name").textContent = el.name;
-				$template.querySelector(".description").textContent = el.description;
-				$template.querySelector(".price").textContent = el.price;
-
-				let $clone = document.importNode($template, true);
-				$fragment.appendChild($clone);
-			});
+			$beersItems.insertAdjacentHTML("beforeend", `<h4>${el.name}</h4>`);
+			$beersItems.insertAdjacentHTML("beforeend", `<p>${el.description}</p>`);
+			$beersItems.insertAdjacentHTML(
+				"beforeend",
+				`<p><b>U$ ${el.price}</b></p>`
+			);
 		});
 
-		$menu.querySelector("article").appendChild($fragment);
+		data.hamburgers.forEach((el) => {
+			$burgersItems.insertAdjacentHTML("beforeend", `<h4>${el.name}</h4>`);
+			$burgersItems.insertAdjacentHTML(
+				"beforeend",
+				`<p> ${el.description}</p>`
+			);
+			$burgersItems.insertAdjacentHTML(
+				"beforeend",
+				`<p><b>U$ ${el.price}</b></p>`
+			);
+		});
+
+		data.platters.forEach((el) => {
+			$plattersItems.insertAdjacentHTML("beforeend", `<h4>${el.name}</h4>`);
+			$plattersItems.insertAdjacentHTML(
+				"beforeend",
+				`<p> ${el.description}</p>`
+			);
+			$plattersItems.insertAdjacentHTML(
+				"beforeend",
+				`<p><b>U$ ${el.price}</b></p>`
+			);
+		});
 	} catch (err) {
 		let message = err.statusText || "Not Found";
 		$title.insertAdjacentHTML("afterend", `<p><b>Error: ${message}</b></p>`);
