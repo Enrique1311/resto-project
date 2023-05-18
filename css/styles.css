@@ -261,26 +261,49 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	gap: 2rem;
+}
+.food-menu-title {
+	margin: 3rem;
 }
 .food-menu-container article {
 	width: 100%;
-	border: 0.1rem solid var(--black);
+	border: 0.1rem solid var(--dark-grey);
 	padding: 1rem;
 }
 .food-menu-container h3 {
 	text-align: center;
 	width: 50%;
 	margin: auto;
-	background-color: rgb(197, 121, 35);
+	background-color: rgb(197, 97, 35);
 	margin-bottom: 1rem;
 	padding: 0.5rem;
 }
 .food-menu-container h4 {
-	background-color: var(--transparent-black);
+	margin-top: 0.8rem;
+	background-color: var(--dark-grey);
 	color: var(--light-grey);
 	padding: 0.2rem;
-	margin-top: 0.8rem;
+}
+.food-menu-container p {
+	padding: 0 0.2rem;
+}
+.articles-container {
+	display: flex;
+	gap: 2rem;
+}
+.articles-column {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	width: 50%;
+}
+.food-menu {
+	background-image: url(../images/food.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 /* Footer *****************************************************/

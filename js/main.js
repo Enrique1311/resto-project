@@ -15,6 +15,11 @@ function toggleMenu() {
 const $beersItems = document.querySelector(".beers-items");
 const $burgersItems = document.querySelector(".burgers-items");
 const $plattersItems = document.querySelector(".platters-items");
+const $pizzasItems = document.querySelector(".pizzas-items");
+const $gourmetItems = document.querySelector(".gourmet-items");
+const $dessertsItems = document.querySelector(".desserts-items");
+const $drinksItems = document.querySelector(".drinks-items");
+const $withoutAlcoholItems = document.querySelector(".without-alcohol-items");
 
 const getMenu = async () => {
 	try {
@@ -51,6 +56,63 @@ const getMenu = async () => {
 				`<p> ${el.description}</p>`
 			);
 			$plattersItems.insertAdjacentHTML(
+				"beforeend",
+				`<p><b>U$ ${el.price}</b></p>`
+			);
+		});
+
+		data.pizzas.forEach((el) => {
+			$pizzasItems.insertAdjacentHTML("beforeend", `<h4>${el.name}</h4>`);
+			$pizzasItems.insertAdjacentHTML("beforeend", `<p> ${el.description}</p>`);
+			$pizzasItems.insertAdjacentHTML(
+				"beforeend",
+				`<p><b>U$ ${el.price}</b></p>`
+			);
+		});
+
+		data.gourmet.forEach((el) => {
+			$gourmetItems.insertAdjacentHTML("beforeend", `<h4>${el.name}</h4>`);
+			$gourmetItems.insertAdjacentHTML(
+				"beforeend",
+				`<p> ${el.description}</p>`
+			);
+			$gourmetItems.insertAdjacentHTML(
+				"beforeend",
+				`<p><b>U$ ${el.price}</b></p>`
+			);
+		});
+
+		data.desserts.forEach((el) => {
+			$dessertsItems.insertAdjacentHTML("beforeend", `<h4>${el.name}</h4>`);
+			$dessertsItems.insertAdjacentHTML(
+				"beforeend",
+				`<p> ${el.description}</p>`
+			);
+			$dessertsItems.insertAdjacentHTML(
+				"beforeend",
+				`<p><b>U$ ${el.price}</b></p>`
+			);
+		});
+
+		data.drinks.forEach((el) => {
+			$drinksItems.insertAdjacentHTML("beforeend", `<h4>${el.name}</h4>`);
+			$drinksItems.insertAdjacentHTML("beforeend", `<p> ${el.description}</p>`);
+			$drinksItems.insertAdjacentHTML(
+				"beforeend",
+				`<p><b>U$ ${el.price}</b></p>`
+			);
+		});
+
+		data.withoutAlcohol.forEach((el) => {
+			$withoutAlcoholItems.insertAdjacentHTML(
+				"beforeend",
+				`<h4>${el.name}</h4>`
+			);
+			$withoutAlcoholItems.insertAdjacentHTML(
+				"beforeend",
+				`<p> ${el.description}</p>`
+			);
+			$withoutAlcoholItems.insertAdjacentHTML(
 				"beforeend",
 				`<p><b>U$ ${el.price}</b></p>`
 			);

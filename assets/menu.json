@@ -361,7 +361,7 @@
 			"price": 8.99
 		}
 	],
-	"beverages": [
+	"withoutAlcohol": [
 		{
 			"id": 1,
 			"name": "Sparkling Lemonade",
