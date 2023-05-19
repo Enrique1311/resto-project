@@ -1,13 +1,13 @@
 :root {
 	--black: rgb(0, 0, 0);
 	--transparent-black: rgba(0, 0, 0, 0.8);
-	--dark-grey: rgb(39, 39, 39);
+	--dark-grey: rgb(52, 51, 51);
 	--transparent-dark-grey: rgb(39, 39, 39, 0.8);
 	--light-grey: rgb(146, 146, 147);
 	--transparent-light-grey: rgb(146, 146, 147, 0.8);
 	--white: rgb(255, 255, 255);
 	--transparent-white: rgb(255, 255, 255, 0.7);
-	--my-red: rgb(255, 0, 0);
+	--my-red: rgb(169, 104, 7);
 	scroll-behavior: smooth;
 	font-size: 20px;
 }
@@ -253,7 +253,7 @@ body {
 	text-align: center;
 }
 
-/* Menu *******************************************************/
+/* Food Menu *******************************************************/
 .food-menu-container {
 	padding: 2rem 4rem;
 	background-color: var(--light-grey);
@@ -268,42 +268,53 @@ body {
 .food-menu-container article {
 	width: 100%;
 	border: 0.1rem solid var(--dark-grey);
+	border-radius: 0.5rem;
 	padding: 1rem;
+	transition: all.5s linear;
 }
-.food-menu-container h3 {
+.food-menu-container button {
+	display: block;
 	text-align: center;
 	width: 50%;
 	margin: auto;
-	background-color: rgb(197, 97, 35);
+	background-color: var(--my-red);
 	margin-bottom: 1rem;
 	padding: 0.5rem;
+	border: none;
+	border-radius: 0.3rem;
+	font-weight: bold;
+	font-size: 1.2rem;
+	cursor: pointer;
 }
 .food-menu-container h4 {
 	margin-top: 0.8rem;
 	background-color: var(--dark-grey);
 	color: var(--light-grey);
 	padding: 0.2rem;
+	border-radius: 0.3rem;
 }
 .food-menu-container p {
 	padding: 0 0.2rem;
 }
+.food-menu-container h5 {
+	width: fit-content;
+	padding: 0 0.2rem;
+	color: var(--dark-grey);
+	font-size: 1rem;
+}
 .articles-container {
 	display: flex;
-	gap: 2rem;
-}
-.articles-column {
-	display: flex;
 	flex-direction: column;
+	width: 100%;
 	gap: 2rem;
-	width: 50%;
 }
-.food-menu {
-	background-image: url(../images/food.jpg);
-	background-size: cover;
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-position: center;
+.beers-items {
+	display: block;
+	transition: all.5s ease;
+}
+.closed {
+	display: none;
+	transition: all 0.5s ease;
 }
 
 /* Footer *****************************************************/

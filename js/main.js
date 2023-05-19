@@ -20,6 +20,14 @@ const $gourmetItems = document.querySelector(".gourmet-items");
 const $dessertsItems = document.querySelector(".desserts-items");
 const $drinksItems = document.querySelector(".drinks-items");
 const $withoutAlcoholItems = document.querySelector(".without-alcohol-items");
+const $beersBtn = document.querySelector(".beers-btn");
+const $burgersBtn = document.querySelector(".burgers-btn");
+const $plattersBtn = document.querySelector(".platters-btn");
+const $pizzasBtn = document.querySelector(".pizzas-btn");
+const $gourmetBtn = document.querySelector(".gourmet-btn");
+const $dessertsBtn = document.querySelector(".desserts-btn");
+const $drinksBtn = document.querySelector(".drinks-btn");
+const $withoutAlcoholBtn = document.querySelector(".without-alcohol-btn");
 
 const getMenu = async () => {
 	try {
@@ -33,7 +41,7 @@ const getMenu = async () => {
 			$beersItems.insertAdjacentHTML("beforeend", `<p>${el.description}</p>`);
 			$beersItems.insertAdjacentHTML(
 				"beforeend",
-				`<p><b>U$ ${el.price}</b></p>`
+				`<h5><b>U$ ${el.price}</b></h5>`
 			);
 		});
 
@@ -45,7 +53,7 @@ const getMenu = async () => {
 			);
 			$burgersItems.insertAdjacentHTML(
 				"beforeend",
-				`<p><b>U$ ${el.price}</b></p>`
+				`<h5><b>U$ ${el.price}</b></h5>`
 			);
 		});
 
@@ -57,7 +65,7 @@ const getMenu = async () => {
 			);
 			$plattersItems.insertAdjacentHTML(
 				"beforeend",
-				`<p><b>U$ ${el.price}</b></p>`
+				`<h5><b>U$ ${el.price}</b></h5>`
 			);
 		});
 
@@ -66,7 +74,7 @@ const getMenu = async () => {
 			$pizzasItems.insertAdjacentHTML("beforeend", `<p> ${el.description}</p>`);
 			$pizzasItems.insertAdjacentHTML(
 				"beforeend",
-				`<p><b>U$ ${el.price}</b></p>`
+				`<h5><b>U$ ${el.price}</b></h5>`
 			);
 		});
 
@@ -78,7 +86,7 @@ const getMenu = async () => {
 			);
 			$gourmetItems.insertAdjacentHTML(
 				"beforeend",
-				`<p><b>U$ ${el.price}</b></p>`
+				`<h5><b>U$ ${el.price}</b></h5>`
 			);
 		});
 
@@ -90,7 +98,7 @@ const getMenu = async () => {
 			);
 			$dessertsItems.insertAdjacentHTML(
 				"beforeend",
-				`<p><b>U$ ${el.price}</b></p>`
+				`<h5><b>U$ ${el.price}</b></h5>`
 			);
 		});
 
@@ -99,7 +107,7 @@ const getMenu = async () => {
 			$drinksItems.insertAdjacentHTML("beforeend", `<p> ${el.description}</p>`);
 			$drinksItems.insertAdjacentHTML(
 				"beforeend",
-				`<p><b>U$ ${el.price}</b></p>`
+				`<h5><b>U$ ${el.price}</b></h5>`
 			);
 		});
 
@@ -114,7 +122,7 @@ const getMenu = async () => {
 			);
 			$withoutAlcoholItems.insertAdjacentHTML(
 				"beforeend",
-				`<p><b>U$ ${el.price}</b></p>`
+				`<h5><b>U$ ${el.price}</b></h5>`
 			);
 		});
 	} catch (err) {
@@ -124,3 +132,35 @@ const getMenu = async () => {
 };
 
 document.addEventListener("DOMContentLoaded", getMenu);
+
+$beersBtn.addEventListener("click", () =>
+	$beersItems.classList.toggle("closed")
+);
+
+$burgersBtn.addEventListener("click", () =>
+	$burgersItems.classList.toggle("closed")
+);
+
+$plattersBtn.addEventListener("click", () =>
+	$plattersItems.classList.toggle("closed")
+);
+
+$pizzasBtn.addEventListener("click", () =>
+	$pizzasItems.classList.toggle("closed")
+);
+
+$gourmetBtn.addEventListener("click", () =>
+	$gourmetItems.classList.toggle("closed")
+);
+
+$dessertsBtn.addEventListener("click", () =>
+	$dessertsItems.classList.toggle("closed")
+);
+
+$drinksBtn.addEventListener("click", () =>
+	$drinksItems.classList.toggle("closed")
+);
+
+$withoutAlcoholBtn.addEventListener("click", () =>
+	$withoutAlcoholItems.classList.toggle("closed")
+);
