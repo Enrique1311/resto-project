@@ -135,7 +135,7 @@ body {
 	flex-direction: column;
 	justify-content: flex-start;
 	gap: 3rem;
-	padding: 6rem 3rem;
+	padding: 6rem 2rem;
 	color: var(--white);
 	transition: 0.5s;
 }
@@ -211,13 +211,13 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	padding: 3rem;
 }
 .about-us-text {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	width: 60%;
 	background-color: var(--transparent-dark-grey);
 	color: var(--white);
 	padding: 3rem;
