@@ -20,6 +20,10 @@ body {
 	font-family: "roboto", sans-serif;
 }
 
+h2 {
+	font-size: 2.5rem;
+}
+
 /* Buttons ******************************************************/
 .my-button {
 	background-color: var(--black);
@@ -496,7 +500,7 @@ body {
 	}
 	/* Our food **********************/
 	.our-food-text {
-		padding: 4rem 2rem;
+		padding: 4rem 2rem 0rem 2rem;
 	}
 	/* Food Menu *********************/
 	.food-menu-container {
