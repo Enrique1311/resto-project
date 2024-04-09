@@ -9,7 +9,7 @@
 	--transparent-white: rgb(255, 255, 255, 0.7);
 	--my-red: rgb(169, 104, 7);
 	scroll-behavior: smooth;
-	font-size: 20px;
+	font-size: 22px;
 }
 * {
 	margin: 0;
@@ -85,10 +85,11 @@ body {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	gap: 2rem;
 	position: fixed;
 	background-color: var(--black);
 	height: fit-content;
-	padding: 0.5rem 2rem;
+	padding: 0.5rem 6rem;
 	width: 100%;
 	top: 0%;
 	z-index: 20;
@@ -107,7 +108,7 @@ body {
 	display: flex;
 	justify-content: right;
 	align-items: center;
-	gap: 5rem;
+	gap: 1.5rem;
 	width: 100%;
 }
 .link-item {
@@ -210,7 +211,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 5rem 4rem;
+	padding: 5rem 6rem;
 }
 .about-us-text {
 	display: flex;
@@ -219,7 +220,8 @@ body {
 	align-items: center;
 	background-color: var(--transparent-dark-grey);
 	color: var(--white);
-	padding: 2rem;
+	font-size: 1.2rem;
+	padding: 5rem;
 	border-radius: 0.5rem;
 	box-shadow: 0 0 1rem 0 var(--black);
 	gap: 2rem;
@@ -230,20 +232,18 @@ body {
 	display: flex;
 	background-color: var(--black);
 	width: 100%;
-	padding-top: 1rem;
 	box-shadow: 0 0 1rem 0 var(--black);
 }
 .burguer-image {
 	width: 50%;
+	object-fit: contain;
 }
 .our-food-text {
 	color: var(--light-grey);
 	width: 50%;
 	text-align: left;
 	font-size: 1.2rem;
-	margin: auto;
-	padding-right: 4rem;
-	padding-left: 4rem;
+	padding: 5rem 6rem 5rem 1rem;
 	box-shadow: 0 0 3rem 0 var(--black);
 }
 .our-food-text h2 {
@@ -253,7 +253,7 @@ body {
 
 /* Food Menu *******************************************************/
 .food-menu-container {
-	padding: 2rem 4rem;
+	padding: 2rem 6rem;
 	background-color: var(--light-grey);
 	display: flex;
 	flex-direction: column;
@@ -339,6 +339,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	font-size: 1.2rem;
 	gap: 4rem;
 	margin-top: 2rem;
 }
@@ -379,24 +380,54 @@ body {
 /* Media Queries ******************************************/
 @media screen and (max-width: 1200px) {
 	:root {
-		font-size: 18px;
+		font-size: 20px;
+	}
+	/* Navbar ***************************************/
+	.navbar-container {
+		padding: 0.5rem 4rem;
 	}
 	/* Home ***********************/
 	.main-logo {
 		width: 35%;
 	}
+	/* About us ******************************** */
+	.about-us-container {
+		padding: 4rem;
+	}
+	.about-us-text {
+		padding: 4rem;
+	}
 	/* Our food **********************/
 	.our-food-text {
-		padding-right: 3rem;
+		padding: 4rem 4rem 4rem 1rem;
+	}
+	/* Food Menu *********************/
+	.food-menu-container {
+		padding: 4rem;
+	}
+	/* Contacts *********************/
+	.contacts-container {
+		padding: 5rem 4rem 4rem 4rem;
 	}
 }
 @media screen and (max-width: 900px) {
 	:root {
-		font-size: 16px;
+		font-size: 18px;
+	}
+	/* Navbar ***************************************/
+	.navbar-container {
+		padding: 0.5rem 3rem;
 	}
 	/* Home ***********************/
 	.main-logo {
 		width: 50%;
+	}
+	/* About us ******************************** */
+	.about-us-container {
+		padding: 3rem;
+	}
+	.about-us-text {
+		padding: 3rem;
 	}
 	/* Our food **********************/
 	.our-food-container {
@@ -407,17 +438,37 @@ body {
 	}
 	.our-food-text {
 		width: 100%;
-		padding-top: 3rem;
-		padding-right: 5rem;
-		padding-left: 5rem;
+		padding: 5rem 3rem 1rem 3rem;
+	}
+	/* Food Menu *********************/
+	.food-menu-container {
+		padding: 3rem;
 	}
 	/* Contacts *********************/
 	.contacts-container {
 		padding: 3rem;
 		padding-top: 4.5rem;
 	}
+	/* Contacts *********************/
+	.contacts-container {
+		padding: 5rem 3rem 4rem 3rem;
+	}
+	.footer-logo-and-text {
+		flex-direction: column;
+		gap: 2rem;
+	}
+	.contacts-form {
+		margin: 3rem 0 0 0;
+	}
 }
 @media screen and (max-width: 650px) {
+	:root {
+		font-size: 16px;
+	}
+	/* Navbar ***************************************/
+	.navbar-container {
+		padding: 0.5rem 2rem;
+	}
 	/* Social Media ****************/
 	.social-media {
 		display: flex;
@@ -437,19 +488,22 @@ body {
 		display: flex;
 	}
 	/* About-us  ********************/
+	.about-us-container {
+		padding: 4rem 2rem;
+	}
 	.about-us-text {
 		padding: 1.5rem;
+	}
+	/* Our food **********************/
+	.our-food-text {
+		padding: 4rem 2rem;
 	}
 	/* Food Menu *********************/
 	.food-menu-container {
 		padding: 2rem;
 	}
 	/* Contacts *********************/
-	.footer-logo-and-text {
-		flex-direction: column;
-		gap: 2rem;
-	}
-	.contacts-form {
-		margin: 3rem 0 0 0;
+	.contacts-container {
+		padding: 5rem 2rem 4rem 2rem;
 	}
 }
