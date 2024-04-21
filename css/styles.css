@@ -93,7 +93,7 @@ h2 {
 	position: fixed;
 	background-color: var(--black);
 	height: fit-content;
-	padding: 0.5rem 6rem;
+	padding: 1rem 6rem;
 	width: 100%;
 	top: 0%;
 	z-index: 20;
@@ -102,7 +102,7 @@ h2 {
 .navbar-logo img {
 	display: flex;
 	align-items: center;
-	height: 3.5rem;
+	height: 2.5rem;
 	background-color: var(--light-grey);
 	border-radius: 50%;
 	cursor: pointer;
@@ -112,7 +112,7 @@ h2 {
 	display: flex;
 	justify-content: right;
 	align-items: center;
-	gap: 1.5rem;
+	gap: 1.8rem;
 	width: 100%;
 }
 .link-item {
@@ -121,6 +121,9 @@ h2 {
 }
 .link-item:hover {
 	color: var(--light-grey);
+}
+.link-item.active {
+	border-bottom: 2px solid var(--white);
 }
 .hamburguer-menu {
 	display: none;
@@ -215,7 +218,7 @@ h2 {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 5rem 6rem;
+	padding: 7rem 6rem;
 }
 .about-us-text {
 	display: flex;
@@ -225,7 +228,7 @@ h2 {
 	background-color: var(--transparent-dark-grey);
 	color: var(--white);
 	font-size: 1.2rem;
-	padding: 5rem;
+	padding: 3rem 5rem;
 	border-radius: 0.5rem;
 	box-shadow: 0 0 1rem 0 var(--black);
 	gap: 2rem;
@@ -237,6 +240,7 @@ h2 {
 	background-color: var(--black);
 	width: 100%;
 	box-shadow: 0 0 1rem 0 var(--black);
+	padding-top: 2rem;
 }
 .burguer-image {
 	width: 50%;
@@ -381,6 +385,32 @@ h2 {
 	font-size: 1rem;
 }
 
+/* Top Button******************************** */
+.top-btn {
+	position: fixed;
+	z-index: 500;
+	right: 1rem;
+	bottom: 1rem;
+	background-color: var(--black);
+	color: var(--white);
+	font-size: 1.2rem;
+	padding: 0.5rem;
+	border: 2px solid var(--white);
+	border-radius: 10px;
+	width: fit-content;
+}
+
+.top-btn:hover {
+	background-color: var(--white);
+	color: var(--black);
+	border: 2px solid var(--black);
+}
+
+.hidden-btn {
+	opacity: 0;
+	visibility: hidden;
+}
+
 /* Media Queries ******************************************/
 @media screen and (max-width: 1200px) {
 	:root {
@@ -388,7 +418,7 @@ h2 {
 	}
 	/* Navbar ***************************************/
 	.navbar-container {
-		padding: 0.5rem 4rem;
+		padding: 1rem 4rem;
 	}
 	/* Home ***********************/
 	.main-logo {
@@ -396,14 +426,14 @@ h2 {
 	}
 	/* About us ******************************** */
 	.about-us-container {
-		padding: 4rem;
+		padding: 6rem 4rem;
 	}
 	.about-us-text {
 		padding: 4rem;
 	}
 	/* Our food **********************/
 	.our-food-text {
-		padding: 4rem 4rem 4rem 1rem;
+		padding: 2rem 4rem 4rem 1rem;
 	}
 	/* Food Menu *********************/
 	.food-menu-container {
@@ -420,7 +450,7 @@ h2 {
 	}
 	/* Navbar ***************************************/
 	.navbar-container {
-		padding: 0.5rem 3rem;
+		padding: 1rem 3rem;
 	}
 	/* Home ***********************/
 	.main-logo {
@@ -428,7 +458,7 @@ h2 {
 	}
 	/* About us ******************************** */
 	.about-us-container {
-		padding: 3rem;
+		padding: 6rem 3rem;
 	}
 	.about-us-text {
 		padding: 3rem;
@@ -442,7 +472,7 @@ h2 {
 	}
 	.our-food-text {
 		width: 100%;
-		padding: 5rem 3rem 1rem 3rem;
+		padding: 2rem 3rem 1rem 3rem;
 	}
 	/* Food Menu *********************/
 	.food-menu-container {
@@ -471,7 +501,7 @@ h2 {
 	}
 	/* Navbar ***************************************/
 	.navbar-container {
-		padding: 0.5rem 2rem;
+		padding: 1rem 2rem;
 	}
 	/* Social Media ****************/
 	.social-media {
@@ -493,14 +523,14 @@ h2 {
 	}
 	/* About-us  ********************/
 	.about-us-container {
-		padding: 4rem 2rem;
+		padding: 6rem 2rem;
 	}
 	.about-us-text {
 		padding: 1.5rem;
 	}
 	/* Our food **********************/
 	.our-food-text {
-		padding: 4rem 2rem 0rem 2rem;
+		padding: 2rem 2rem 0rem 2rem;
 	}
 	/* Food Menu *********************/
 	.food-menu-container {

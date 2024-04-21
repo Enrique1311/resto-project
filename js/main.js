@@ -1,7 +1,9 @@
+const d = document,
+	w = window;
+
 // Nabvar **************************************************
-const hamburguerMenu = document.querySelector(".hamburguer-menu");
-const mobileLinks = document.querySelector(".mobile-navbar-links");
-// const closeMenuIcon = document.querySelector(".close-menu-icon");
+const hamburguerMenu = d.querySelector(".hamburguer-menu");
+const mobileLinks = d.querySelector(".mobile-navbar-links");
 
 hamburguerMenu.addEventListener("click", toggleMenu);
 mobileLinks.addEventListener("click", toggleMenu);
@@ -10,23 +12,47 @@ function toggleMenu() {
 	mobileLinks.classList.toggle("opened-menu");
 }
 
-// Food menu *************************************************
-const $beersItems = document.querySelector(".beers-items");
-const $burgersItems = document.querySelector(".burgers-items");
-const $plattersItems = document.querySelector(".platters-items");
-const $pizzasItems = document.querySelector(".pizzas-items");
-const $gourmetItems = document.querySelector(".gourmet-items");
-const $dessertsItems = document.querySelector(".desserts-items");
-const $drinksItems = document.querySelector(".drinks-items");
-const $withoutAlcoholItems = document.querySelector(".without-alcohol-items");
-const $beersBtn = document.querySelector(".beers-btn");
-const $burgersBtn = document.querySelector(".burgers-btn");
-const $plattersBtn = document.querySelector(".platters-btn");
-const $pizzasBtn = document.querySelector(".pizzas-btn");
-const $gourmetBtn = document.querySelector(".gourmet-btn");
-const $dessertsBtn = document.querySelector(".desserts-btn");
-const $drinksBtn = document.querySelector(".drinks-btn");
-const $withoutAlcoholBtn = document.querySelector(".without-alcohol-btn");
+// Scroll Spy ***********************************************
+function scrollSpy() {
+	const $sections = d.querySelectorAll("section");
+	const $navLinks = d.querySelectorAll(".link-item");
+
+	w.onscroll = () => {
+		$sections.forEach((sec) => {
+			let top = w.scrollY,
+				offset = sec.offsetTop - 600,
+				height = sec.offsetHeight,
+				id = sec.getAttribute("id");
+
+			if (top >= offset && top < offset + height) {
+				$navLinks.forEach((link) => {
+					link.classList.remove("active");
+					d.querySelector(`.navbar-links a[href*="${id}"]`).classList.add(
+						"active"
+					);
+				});
+			}
+		});
+	};
+}
+
+// Our menu *************************************************
+const $burgersItems = d.querySelector(".burgers-items");
+const $plattersItems = d.querySelector(".platters-items");
+const $beersItems = d.querySelector(".beers-items");
+const $pizzasItems = d.querySelector(".pizzas-items");
+const $gourmetItems = d.querySelector(".gourmet-items");
+const $dessertsItems = d.querySelector(".desserts-items");
+const $drinksItems = d.querySelector(".drinks-items");
+const $withoutAlcoholItems = d.querySelector(".without-alcohol-items");
+const $beersBtn = d.querySelector(".beers-btn");
+const $burgersBtn = d.querySelector(".burgers-btn");
+const $plattersBtn = d.querySelector(".platters-btn");
+const $pizzasBtn = d.querySelector(".pizzas-btn");
+const $gourmetBtn = d.querySelector(".gourmet-btn");
+const $dessertsBtn = d.querySelector(".desserts-btn");
+const $drinksBtn = d.querySelector(".drinks-btn");
+const $withoutAlcoholBtn = d.querySelector(".without-alcohol-btn");
 
 const getMenu = async () => {
 	try {
@@ -130,8 +156,6 @@ const getMenu = async () => {
 	}
 };
 
-document.addEventListener("DOMContentLoaded", getMenu);
-
 $beersBtn.addEventListener("click", () =>
 	$beersItems.classList.toggle("closed")
 );
@@ -163,3 +187,26 @@ $drinksBtn.addEventListener("click", () =>
 $withoutAlcoholBtn.addEventListener("click", () =>
 	$withoutAlcoholItems.classList.toggle("closed")
 );
+
+// Top Button ************************************************
+function topBtn() {
+	const $topBtn = d.querySelector(".top-btn");
+
+	w.addEventListener("scroll", () => {
+		let scrollTop = d.documentElement.scrollTop;
+
+		if (scrollTop > 100) {
+			$topBtn.classList.remove("hidden-btn");
+		} else {
+			$topBtn.classList.add("hidden-btn");
+		}
+	});
+
+	d.addEventListener("click", (e) => {
+		if (e.target.matches(".top-btn") || e.target.matches(".top-btn i")) {
+			w.scrollTo({ top: 0 });
+		}
+	});
+}
+
+d.addEventListener("DOMContentLoaded", getMenu(), topBtn(), scrollSpy());
