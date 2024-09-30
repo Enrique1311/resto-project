@@ -20,7 +20,7 @@ function scrollSpy() {
 	w.onscroll = () => {
 		$sections.forEach((sec) => {
 			let top = w.scrollY,
-				offset = sec.offsetTop - 600,
+				offset = sec.offsetTop - 500,
 				height = sec.offsetHeight,
 				id = sec.getAttribute("id");
 
